@@ -1,37 +1,32 @@
 
-public class Professor {
+public class Professor extends PessoaFisica {
+	private String materia;
+	private String turno;
 
-	private String disciplinaProfessor;
-	private String periodoProfessor;
-	
-	
-	public Professor(String nome, String cpf, String sexo, String disciplina, String periodo, String disciplinaProfessor, String periodoProfessor) {
-		super();
-		this.disciplinaProfessor = disciplinaProfessor;
-		this.periodoProfessor = periodoProfessor;
+	public Professor(String membro, String cpf, String sexo, String materia, String turno) {
+		super(membro, cpf, sexo);
+		this.materia = materia;
+		this.turno = turno;
 	}
 
-
-	public String getDisciplinaProfessor() {
-		return disciplinaProfessor;
+	public String getMateria() {
+		return materia;
 	}
 
-
-	public void setDisciplinaProfessor(String disciplinaProfessor) {
-		this.disciplinaProfessor = disciplinaProfessor;
+	public void setMateria(String materia) {
+		this.materia = materia;
 	}
 
-
-	public String getPeriodoProfessor() {
-		return periodoProfessor;
+	public String getTurno() {
+		return turno;
 	}
 
-
-	public void setPeriodoProfessor(String periodoProfessor) {
-		this.periodoProfessor = periodoProfessor;
+	public void setTurno(String turno) {
+		this.turno = turno;
 	}
+
 	public String toString() {
-		return super.toString()+"\nDisciplina: "+this.disciplinaProfessor+"\nPeriodo: "+this.periodoProfessor;
+		return super.toString() + "\nMateria: " + this.materia + "\nturno: " + this.turno;
 	}
 
 }

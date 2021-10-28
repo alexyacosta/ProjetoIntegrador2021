@@ -8,8 +8,8 @@ public class TestaUniversidade {
 				"Avenida Maranhão S/N");
 		System.out.println(Universidade);
 		System.out.println("\n -------- PESSOA JURÍDICA -----");
-		PessoaJuridica PessJuri = new PessoaJuridica("Nome da empresa", "CNPJ: Inscrição Estadual");
-		System.out.println(PessJuri);
+		PessoaJuridica PessoaJuridica = new PessoaJuridica("Nome da empresa", "CNPJ: Inscrição Estadual");
+		System.out.println(PessoaJuridica);
 		System.out.println("\n -------- FORNECEDOR ----------");
 		Fornecedor Fornecedor = new Fornecedor("Code Plast", "30.223344/0001-30", "Cadeiras");
 		System.out.println(Fornecedor);
@@ -23,7 +23,7 @@ public class TestaUniversidade {
 		PessoaFisica PessFisica = new PessoaFisica("Professor/Aluno", "000.000.000-00", "F/M");
 		System.out.println(PessFisica);
 		System.out.println("\n ---------- Professor ----------");
-		Professor Professor = new Professor("Mestre kame", "123.456.789-00", "M", "Tai chutsu", "Despertino", null, null);
+		Professor Professor = new Professor("Mestre kame", "123.456.789-00", "M", "Tai chutsu", "Despertino");
 		System.out.println(Professor);
 	}
 
